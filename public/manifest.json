@@ -1,25 +1,22 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "manifest_version": 2,
+  "name": "Please Note!",
+  "author": "Jacek Budzynski",
+  "version": "1.0.0",
+  "description": "Make notes from within your browser",
+  "icons": {
+    "16": "16v2.png",
+    "32": "32v2.png",
+    "48": "48v2.png",
+    "128": "128v2.png"
+  },
+  "permissions": ["identity", "identity.email"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Please Note!"
+  }
 }
